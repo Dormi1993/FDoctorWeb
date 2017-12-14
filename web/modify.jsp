@@ -27,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  <form method="post" name="myform" action="/netbank/info/info_modify">
+  <form method="post" name="myform" action="/FDoctorWeb/info/info_modify">
   <div align="center">
   	<table width="450" class="table">
 		<tbody>
@@ -50,6 +50,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<tr>
 			<td>证件号码：</td>
 			<td>&nbsp;<input type="text" name="personinfo.cardid" value="${personinfo.cardid}"/><font size="1" style="color:red;">15位或18位</font></td></tr>
+			<tr>
+				<td>CRP浓度：</td>
+				<td>&nbsp;<input type="text" name="personinfo.crp" value="${personinfo.crp}"/></td>
+			</tr>
 			<tr>
 			<td>&nbsp;</td>
 			<td><input type="submit" value="提交" /> <br></td></tr>

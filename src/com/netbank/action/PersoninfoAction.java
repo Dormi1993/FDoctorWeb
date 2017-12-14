@@ -44,6 +44,7 @@ public class PersoninfoAction extends ActionSupport implements RequestAware, Ses
         per.setRealname(personinfo.getRealname());
         per.setSex(personinfo.getSex());
         per.setTelephone(personinfo.getTelephone());
+        per.setCrp(personinfo.getCrp());
         //将个人信息更新到数据库中
         if (personinfoBiz.modifyPersoninfo(per)){
             //更新成功后，将个人信息对象重新存入Session保存

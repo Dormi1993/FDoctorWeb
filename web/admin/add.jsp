@@ -17,8 +17,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<link rel="stylesheet" type="text/css" href="/netbank/style/style.css">
-	<link rel="stylesheet" type="text/css" href="/netbank/style/default.css">
+	<link rel="stylesheet" type="text/css" href="/FDoctorWeb/style/style.css">
+	<link rel="stylesheet" type="text/css" href="/FDoctorWeb/style/default.css">
 
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -39,6 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		var address=document.getElementById("address").value;
 		var telephone=document.getElementById("telephone").value;
 		var cardid=document.getElementById("cardid").value;
+		var crp=document.getElementById("crp").valueOf;
 		
 		
 		document.getElementById("errorusername").innerHTML="";
@@ -50,6 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		document.getElementById("erroraddress").innerHTML="";
 		document.getElementById("errortelephone").innerHTML="";
 		document.getElementById("errorcardid").innerHTML="";
+		document.getElementById("errorcrp").innerHTML="";
 		if(username=="")
 		{
 				document.getElementById("errorusername").innerHTML="请输入用户名";
@@ -86,7 +88,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		{
 				document.getElementById("errorage").innerHTML="请输入年龄";
 				return false;
-		}else
+		}else if(crp=="")
+        {
+            document.getElementById("errorcrp").innerHTML="请输入CRP浓度";
+            return false;
+        }else
 		{
 			if(pwd!=confirmpwd)
 				{
@@ -141,7 +147,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  <form method="post" name="myform" action="/netbank/admin/kaihu" onsubmit="return check()">
+  <form method="post" name="myform" action="/FDoctorWeb/admin/kaihu" onsubmit="return check()">
   <div align="center">
   	<table width="450" class="table">
 			<tbody>
@@ -149,7 +155,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<td width="100">用户名：</td>
 					<td>
 						<input id="username" type="text" name="account.username"/>
-						<span id="errorusername" style="color:red;">${message}</span>						
+						<span id="errorusername" style="color:red;">${message}</span>
 					</td>
 				</tr>
 				<tr>
@@ -183,7 +189,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<tr>
 					<td>年龄：</td>
 					<td>
-						<input id="age" type="text" name="personinfo.age""/>
+						<input id="age" type="text" name="personinfo.age"/>
 						<span id="errorage" style="color:red;"></span>
 					</td>
 				</tr>
@@ -196,7 +202,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</select></td></tr> 
 				<tr><td>家庭地址：</td>
 				<td>
-					<input id="address" type="text" name="personinfo.address""/>
+					<input id="address" type="text" name="personinfo.address"/>
 					<span id="erroraddress" style="color:red;"></span>
 				</td></tr>
 				<tr>
@@ -214,6 +220,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<input id="cardid" type="text" name="personinfo.cardid" value="${personinfo.cardid}"/>
 					<font size="1" >15位或18位</font>
 					<span id="errorcardid" style="color:red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>CRP浓度：</td>
+					<td>
+						<input id="crp" type="text" name="personinfo.crp" value="${personinfo.crp}"/>
+						<font size="1" >大于零</font>
+						<span id="errorcrp" style="color:red;"></span>
 					</td>
 				</tr>
 				<tr>

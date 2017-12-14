@@ -74,7 +74,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   	
  <body onload="disptime()">
-<form  method="post" name="myform" action="/netbank/transaction/transfer" onsubmit="return transfer()">
+<form  method="post" name="myform" action="/FDoctorWeb/transaction/transfer" onsubmit="return transfer()">
 	<div align="center">
 	<table width="400" border="0" class="table">
 		<tbody>

@@ -16,6 +16,8 @@ public class Personinfo implements java.io.Serializable {
 	private Long cardid;
 	private String address;
 	private String telephone;
+	private Double crp;
+
 
 	// Constructors
 
@@ -25,7 +27,7 @@ public class Personinfo implements java.io.Serializable {
 
 	/** full constructor */
 	public Personinfo(Account account, String realname, Integer age,
-                      String sex, Long cardid, String address, String telephone) {
+                      String sex, Long cardid, String address, String telephone, Double crp) {
 		this.account = account;
 		this.realname = realname;
 		this.age = age;
@@ -33,6 +35,7 @@ public class Personinfo implements java.io.Serializable {
 		this.cardid = cardid;
 		this.address = address;
 		this.telephone = telephone;
+		this.crp = crp;
 	}
 
 	// Property accessors
@@ -101,4 +104,11 @@ public class Personinfo implements java.io.Serializable {
 		this.telephone = telephone;
 	}
 
+	public Double getCrp() {
+		return crp;
+	}
+
+	public void setCrp(Double crp) {
+		this.crp = crp;
+	}
 }

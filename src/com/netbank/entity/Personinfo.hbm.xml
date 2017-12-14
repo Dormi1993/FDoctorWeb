@@ -31,5 +31,8 @@
         <property name="telephone" type="java.lang.String">
             <column name="telephone" length="50" />
         </property>
+        <property name="crp" type="java.lang.Double">
+            <column name="CRP" precision="18" />
+        </property>
     </class>
 </hibernate-mapping>

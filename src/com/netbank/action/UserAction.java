@@ -5,10 +5,13 @@ import com.netbank.entity.Account;
 import com.netbank.entity.Password;
 import com.netbank.entity.Personinfo;
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.RequestAware;
+import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.SessionAware;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**
@@ -62,6 +65,13 @@ public class UserAction extends ActionSupport implements RequestAware, SessionAw
         session.put("user", account);
         //将该账户个人信息对象存入Session
         session.put("personinfo", personinfo);
+
+        //
+//        HttpServletRequest request = ServletActionContext.getRequest();
+//        String name = request.getParameter("name");
+//        String pwd = request.getParameter("pwd");
+//        System.out.println("name: " + name + "   pwd: " + pwd);
+
         //页面转发
         return "success";
     }
@@ -139,4 +149,11 @@ public class UserAction extends ActionSupport implements RequestAware, SessionAw
         this.session = session;
 
     }
+//
+//    @Override
+//    public void setServletRequest(HttpServletRequest httpServletRequest) {
+//        String name = httpServletRequest.getParameter("name");
+//        String pwd = httpServletRequest.getParameter("pwd");
+//        System.out.println("name: " + name + "   pwd: " + pwd);
+//    }
 }

@@ -16,7 +16,7 @@ if(session.getAttribute("admin")==null)
 <body>
 <div align="center"><center>
 <!-- 查询用户表单部分 -->
-<Form action="/netbank/admin/search" method="POST">
+<Form action="/FDoctorWeb/admin/search" method="POST">
 输入要查询用户的真实姓名:
 <input name="personinfo.realname"/>
 <input name="status.id" type="hidden" value="${status.id}">  
@@ -47,6 +47,8 @@ if(session.getAttribute("admin")==null)
             <div align="center"><font color="#FFFFFF">详细地址</font></div></td>
           <td  nowrap  bgcolor="#999999">
             <div align="center"><font color="#FFFFFF">身份证号</font></div></td>
+          <td  nowrap  bgcolor="#999999">
+            <div align="center"><font color="#FFFFFF">CRP浓度</font></div></td>
           <td  nowrap  bgcolor="#808080">
             <div align="center"><font color="#FFFFFF">电话</font></div></td>
           <td  nowrap  bgcolor="#808080">
@@ -97,6 +99,10 @@ if(session.getAttribute("admin")==null)
                 <div id="noWrap" align="center">
                 	<s:property value="cardid"/>
                 </div></td>
+              <td valign="middle">
+                <div id="noWrap" align="center">
+                    <s:property value="crp"/>
+                </div></td>
               <td valign="middle"> 
                 <div id="noWrap" align="center">
                 	<s:property value="telephone"/>
@@ -108,14 +114,14 @@ if(session.getAttribute("admin")==null)
                 <td>
                 <div id="noWrap" align="center">
                 	<s:if test="account.status.name=='启用'">
-                	<input type="button" value="冻结" onclick="javascript:location.href='/netbank/admin/locking?id=${account.accountid}&status.id=${status.id}'">
+                	<input type="button" value="冻结" onclick="javascript:location.href='/FDoctorWeb/admin/locking?id=${account.accountid}&status.id=${status.id}'">
                 	</s:if>
 					<s:else>
-						<input type="button" value="启用" onclick="javascript:location.href='/netbank/admin/enabled?id=${account.accountid}&status.id=${status.id}'">
+						<input type="button" value="启用" onclick="javascript:location.href='/FDoctorWeb/admin/enabled?id=${account.accountid}&status.id=${status.id}'">
 					</s:else>
                 </div></td>
      	      <td valign="middle"> 
-                <div id="noWrap" align="center"><A href="/netbank/admin/del?id=${account.accountid}&status.id=${status.id}">&nbsp;删除&nbsp;</a></div></td></tr>  
+                <div id="noWrap" align="center"><A href="/FDoctorWeb/admin/del?id=${account.accountid}&status.id=${status.id}">&nbsp;删除&nbsp;</a></div></td></tr>  
 	          </s:iterator>
             <tr> 
               <td height="20" colspan="14" valign="middle"> 

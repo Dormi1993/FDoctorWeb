@@ -27,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript">
 		function select(){
 			var curPage=document.getElementById("curPage").value;
-			location.href="/netbank/transaction/list?pager.curPage="+curPage;
+			location.href="/FDoctorWeb/transaction/list?pager.curPage="+curPage;
 		}
 	</script>
 	</head>
@@ -67,14 +67,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td width="130"></td>
 		<td width="80">
 			<s:if test="pager.curPage>1">
-				<A href='/netbank/transaction/list?pager.curPage=1'>首页</A>&nbsp;&nbsp;
-				<A href='/netbank/transaction/list?pager.curPage=${pager.curPage-1 }'>上一页</A>
+				<A href='/FDoctorWeb/transaction/list?pager.curPage=1'>首页</A>&nbsp;&nbsp;
+				<A href='/FDoctorWeb/transaction/list?pager.curPage=${pager.curPage-1 }'>上一页</A>
 			</s:if>
 		</td>
 		<td width="80">
 			<s:if test="pager.curPage < pager.pageCount">
-				<A href='/netbank/transaction/list?pager.curPage=${pager.curPage+1}'>下一页</A>&nbsp;&nbsp;
-				<A href='/netbank/transaction/list?pager.curPage=${pager.pageCount }'>尾页</A>
+				<A href='/FDoctorWeb/transaction/list?pager.curPage=${pager.curPage+1}'>下一页</A>&nbsp;&nbsp;
+				<A href='/FDoctorWeb/transaction/list?pager.curPage=${pager.pageCount }'>尾页</A>
 			</s:if>
 		</td>
 		<td>共${pager.curPage}/${pager.pageCount}页&nbsp;&nbsp;

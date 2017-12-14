@@ -50,7 +50,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<td>&nbsp;${personinfo.cardid}</td></tr>
 				<tr>
 				<td>’Àªß”‡∂Ó£∫</td>
-				<td>${user.balance}<br></td></tr>
+				<td>&nbsp;${user.balance}</td>
+				</tr>
+				<td>CRP≈®∂»£∫</td>
+				<td>&nbsp;${personinfo.crp}<br></td></tr>
 			</tbody>
 		</table> 		
 		</div>

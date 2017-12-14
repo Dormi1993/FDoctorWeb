@@ -13,10 +13,10 @@
 <LINK href="css/admin.css" type="text/css" rel="stylesheet">
 </head>
 <FRAMESET border=0 frameSpacing=0 rows="60, *" frameBorder=0>
-<FRAME name=header src="/netbank/header.jsp" frameBorder=0 noResize scrolling=no>
+<FRAME name=header src="/FDoctorWeb/header.jsp" frameBorder=0 noResize scrolling=no>
 <FRAMESET cols="170, *">
-<FRAME name=menu src="/netbank/left.jsp" frameBorder=0 noResize>
-<FRAME name=main src="/netbank/main.jsp" frameBorder=0 noResize scrolling=yes>
+<FRAME name=menu src="/FDoctorWeb/left.jsp" frameBorder=0 noResize>
+<FRAME name=main src="/FDoctorWeb/main.jsp" frameBorder=0 noResize scrolling=yes>
 </FRAMESET>
 </FRAMESET>
 <noframes>

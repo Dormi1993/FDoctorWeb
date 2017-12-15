@@ -42,6 +42,9 @@ if(session.getAttribute("user")!=null){
           <TD><A class=menuChild href="/FDoctorWeb/information.jsp" target=main>查看信息</A></TD></TR><TR height=20>
           <TD align=middle width=30><IMG height=9 
             src="images/menu_icon.gif" width=9></TD>
+        <TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-basic/index.htm" target=main>查看CRP并预测病情</A></TD></TR><TR height=20>
+        <TD align=middle width=30><IMG height=9
+                                       src="images/menu_icon.gif" width=9></TD>
           <TD><A class=menuChild href="/FDoctorWeb/modify.jsp" target=main>修改个人信息</A></TD></TR><TR height=20>
           <TD align=middle width=30><IMG height=9 
             src="images/menu_icon.gif" width=9></TD>

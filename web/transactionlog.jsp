@@ -38,11 +38,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<tbody align="center">
 		    <!--标题部分  -->
 			<tr>
-			<td colspan="5" style="font-size: 20;">交易记录</td></tr>
+			<td colspan="6" style="font-size: 20;">交易记录</td></tr>
 			<tr ><td width="50">&nbsp;序号</td>
 			<td width="80">&nbsp;对方账户</td>
 			<td width="80">&nbsp;交易金额</td>
 			<td width="80">&nbsp;交类类型</td>
+			<td width="80">&nbsp;留言</td>
 			<td>&nbsp;交易日期</td></tr>
 			<!--循环显示记录部分  -->
 			<s:iterator value="#request.logs" status="status" >
@@ -57,6 +58,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<td>&nbsp;-<s:property value="trMoney"/></td>				
 			</s:else>
 			<td><s:property value="transactionType.name"/></td>
+			<td><s:property value="message"/></td>
 			<td>&nbsp;<s:property value="datetime"/></td></tr>
 			</s:iterator>				
 		</tbody>

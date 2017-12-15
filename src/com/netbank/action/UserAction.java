@@ -17,7 +17,7 @@ import java.util.Map;
 /**
  * Created by dormi on 2017/1/16.
  */
-public class UserAction extends ActionSupport implements RequestAware, SessionAware {
+public class UserAction extends ActionSupport implements RequestAware, SessionAware, ServletRequestAware {
 
     //定义通过@Resource注解注入的属性userBiz，可省略set方法
     @Resource private UserBiz userBiz;
@@ -149,6 +149,14 @@ public class UserAction extends ActionSupport implements RequestAware, SessionAw
         this.session = session;
 
     }
+
+    public HttpServletRequest httpServletRequest;
+
+    @Override
+    public void setServletRequest(HttpServletRequest httpServletRequest) {
+        this.httpServletRequest = httpServletRequest;
+    }
+
 //
 //    @Override
 //    public void setServletRequest(HttpServletRequest httpServletRequest) {

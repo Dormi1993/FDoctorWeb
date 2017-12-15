@@ -25,5 +25,8 @@
         <property name="datetime" type="java.lang.String">
             <column name="datetime" length="50" />
         </property>
+        <property name="message" type="java.lang.String">
+            <column name="message" length="50" />
+        </property>
     </class>
 </hibernate-mapping>

@@ -96,6 +96,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</td>						
 			</tr>
 			<tr>
+				<td>&nbsp;留言：</td>
+				<td>
+					<input type="text" name="log.message" id="message" value="${log.message}">
+					<span id="errormessage" style="color:red;"></span>
+				</td>
+			</tr>
+			<tr>
 			<td>&nbsp;</td>
 			<td>&nbsp;<input type="Submit" value="转账" /> </td>
 			</tr>

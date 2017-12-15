@@ -14,6 +14,7 @@ public class TransactionLog implements java.io.Serializable {
 	private Integer otherid;
 	private Double trMoney;
 	private String datetime;
+	private String message;
 
 	// Constructors
 
@@ -23,12 +24,13 @@ public class TransactionLog implements java.io.Serializable {
 
 	/** full constructor */
 	public TransactionLog(TransactionType transactionType, Account account,
-			Integer otherid, Double trMoney, String datetime) {
+			Integer otherid, Double trMoney, String datetime, String message) {
 		this.transactionType = transactionType;
 		this.account = account;
 		this.otherid = otherid;
 		this.trMoney = trMoney;
 		this.datetime = datetime;
+		this.message = message;
 	}
 
 	// Property accessors
@@ -81,4 +83,11 @@ public class TransactionLog implements java.io.Serializable {
 		this.datetime = datetime;
 	}
 
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
 }

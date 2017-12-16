@@ -45,7 +45,7 @@ a:hover  { color:#428EFF;text-decoration:underline; }
           <tr>
             <td>
             <p style="MARGIN-TOP: 20px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 50px; LINE-HEIGHT: 150%">
-            <b><font color="#ed5f19">（欢迎使用管理系统）</font></b></p>
+            <b><font color="#ed5f19">（欢迎使用医生管理系统）</font></b></p>
                   <p style="MARGIN-TOP: 20px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 50px; LINE-HEIGHT: 150%"> 
                    
                   <p style="MARGIN-TOP: 20px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 50px; LINE-HEIGHT: 150%"><br>

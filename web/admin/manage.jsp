@@ -9,7 +9,7 @@
 %>
 <html>
 <head>
-<title>管理员页面</title>
+<title>医生管理页面</title>
 </head>
   <frameset framespacing="0" border="false" cols="230,*" frameborder="0">
   <frame name="left"  scrolling="no" marginwidth="0" marginheight="0" src="left.jsp">

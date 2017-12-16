@@ -34,7 +34,7 @@
         <TR>
           <TD style="FONT-WEIGHT: bold; FONT-SIZE: 16px"></TD></TR>
         <TR>
-          <TD>欢迎进入网上银行交易中心！</TD></TR></TABLE></TD></TR>
+          <TD>欢迎进入FDoctorWeb！</TD></TR></TABLE></TD></TR>
   <TR>
     <TD colSpan=3 height=10></TD></TR></TABLE>
 

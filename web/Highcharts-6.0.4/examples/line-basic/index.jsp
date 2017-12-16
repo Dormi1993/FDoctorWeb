@@ -1,6 +1,15 @@
+<%@ page language="java" import="java.util.*" pageEncoding="gb2312"%>
+<%--<%@ taglib uri="/struts-tags" prefix="s" %>--%>
+<%--<%--%>
+	<%--String path = request.getContextPath();--%>
+	<%--String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";--%>
+<%--%>--%>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<%--<base href="<%=basePath%>">--%>
+
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Highcharts Example</title>
@@ -28,7 +37,7 @@
 Highcharts.chart('container', {
 
     title: {
-        text: 'å®¶åº­æˆå‘˜CRPæµ“åº¦éšæ—¶é—´å˜åŒ–å›¾'
+        text: '¼ÒÍ¥³ÉÔ±CRPÅ¨¶ÈËæÊ±¼ä±ä»¯Í¼'
     },
 
     subtitle: {
@@ -37,7 +46,7 @@ Highcharts.chart('container', {
 
     yAxis: {
         title: {
-            text: 'Cååº”è›‹ç™½ï¼ˆCRPï¼‰æµ“åº¦'
+            text: 'C·´Ó¦µ°°×£¨CRP£©Å¨¶È'
         }
     },
     legend: {
@@ -56,10 +65,11 @@ Highcharts.chart('container', {
     },
 
     series: [{
-        name: 'å°æ˜',
+        name: 'Ğ¡Ã÷',
+        <%--data: [43934, 52503, ²»ÄÜÕâÑùÒòÎª£¬ÔÚÒ½Éú½çÃæ£¬personinfoÃ»ÁË${personinfo.crp}, 69658, 97031, 119931, 137133, 154175]--%>
         data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
     }, {
-        name: 'å°çº¢',
+        name: 'Ğ¡ºì',
         data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
     }, {
         name: 'Sales & Distribution',

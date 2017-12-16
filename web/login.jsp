@@ -105,8 +105,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</td>
 				<td>
 					<select name="type" onchange="change()">
-						<option value="0" selected>客户</option>
-						<option value="1">管理员</option>
+						<option value="0" selected>家庭成员</option>
+						<option value="1">医 生</option>
 					</select>
 				</td>
 				</tr>

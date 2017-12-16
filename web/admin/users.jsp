@@ -28,14 +28,14 @@ if(session.getAttribute("admin")==null)
           <td  height="20" nowrap  bgcolor="#999999">
             <div align="center"><font color="#FFFFFF">序列</font></div></td>
           <td nowrap bgcolor="#999999">
-          	<div align="center"><font color="#FFFFFF">账户</font></div>
+          	<div align="center"><font color="#FFFFFF">用户</font></div>
           </td>
            <td nowrap bgcolor="#999999">
           	<div align="center"><font color="#FFFFFF">用户名</font></div>
           </td>
           <td  nowrap bgcolor="#808080">
             <div align="center">
-            	<font color="#FFFFFF">账户余额</font>
+            	<font color="#FFFFFF">用户余额</font>
             </div>
            </td> 
           <td  nowrap bgcolor="#808080">

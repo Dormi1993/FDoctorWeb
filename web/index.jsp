@@ -9,7 +9,7 @@
 %>
 <html>
 <head>
-<title>мЬиорЬпп</title>
+<title>FDoctorWeb</title>
 <LINK href="css/admin.css" type="text/css" rel="stylesheet">
 </head>
 <FRAMESET border=0 frameSpacing=0 rows="60, *" frameBorder=0>

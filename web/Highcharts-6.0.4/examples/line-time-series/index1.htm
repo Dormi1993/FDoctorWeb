@@ -10,7 +10,8 @@
 		</style>
 	</head>
 	<body>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
+<script src="../../code/fcj/jquery-3.1.1.min.js"></script>
 <script src="../../code/highcharts.js"></script>
 <script src="../../code/modules/exporting.js"></script>
 
@@ -20,7 +21,10 @@
 
 		<script type="text/javascript">
 
-            $.getJSON('https://data.jianshukeji.com/jsonp?filename=json/usdeur.json&callback=?', function (data) {
+//            $.getJSON('https://data.jianshukeji.com/jsonp?filename=json/usdeur.json&callback=?', function (data) {
+//            $.getJSON('../../code/fcj/test01.js', function (data) {
+            $.getJSON('../../code/fcj/jsonp.json', function (data) {
+//                console.log(JSON.stringify(data));重要！！
                 Highcharts.chart('container', {
                     chart: {
                         zoomType: 'x'

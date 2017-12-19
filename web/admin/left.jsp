@@ -16,7 +16,7 @@ if(session.getAttribute("admin")!=null){
 
   <tr>
         <td height=25 align="center" bgcolor="#DBC2B0"> 
-          <b>后台管理</b></td>
+          <b>医生后台管理</b></td>
   </tr>
   <tr>
     <td bgcolor="#F5EFE7">

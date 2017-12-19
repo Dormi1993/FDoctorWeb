@@ -29,14 +29,14 @@ Highcharts.chart('container', {
         text: 'CRPÅ¨¶È'
     },
     subtitle: {
-        text: 'Source: WorldClimate.com'
+        text: 'FDoctorWeb'
     },
     xAxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
     yAxis: {
         title: {
-            text: 'ÆøÎÂ (¡ãC)'
+            text: 'CRPÅ¨¶È'
         }
     },
      plotOptions: {

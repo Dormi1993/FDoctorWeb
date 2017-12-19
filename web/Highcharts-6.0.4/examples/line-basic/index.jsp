@@ -72,13 +72,13 @@ Highcharts.chart('container', {
         name: '小红',
         data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
     }, {
-        name: 'Sales & Distribution',
+        name: '小丁',
         data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
     }, {
-        name: 'Project Development',
+        name: '小白',
         data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
     }, {
-        name: 'Other',
+        name: '小王',
         data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
     }],
 

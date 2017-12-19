@@ -28,16 +28,16 @@ if(session.getAttribute("admin")==null)
           <td  height="20" nowrap  bgcolor="#999999">
             <div align="center"><font color="#FFFFFF">序列</font></div></td>
           <td nowrap bgcolor="#999999">
-          	<div align="center"><font color="#FFFFFF">用户</font></div>
+          	<div align="center"><font color="#FFFFFF">账户</font></div>
           </td>
            <td nowrap bgcolor="#999999">
           	<div align="center"><font color="#FFFFFF">用户名</font></div>
           </td>
-          <td  nowrap bgcolor="#808080">
-            <div align="center">
-            	<font color="#FFFFFF">用户余额</font>
-            </div>
-           </td> 
+          <%--<td  nowrap bgcolor="#808080">--%>
+            <%--<div align="center">--%>
+            	<%--<font color="#FFFFFF">用户余额</font>--%>
+            <%--</div>--%>
+           <%--</td> --%>
           <td  nowrap bgcolor="#808080">
             <div align="center">
             	<font color="#FFFFFF">姓名</font>
@@ -81,11 +81,11 @@ if(session.getAttribute("admin")==null)
               <div id="noWrap" align="center">
               	<s:property value="account.username"/>
               </div></td>
-              <td  height="20" valign="middle"> 
-               	<div id="noWrap" align="center">
-               	 <s:property value="account.balance"/>
-                </div>
-               </td>
+              <%--<td  height="20" valign="middle"> --%>
+               	<%--<div id="noWrap" align="center">--%>
+               	 <%--<s:property value="account.balance"/>--%>
+                <%--</div>--%>
+               <%--</td>--%>
               <td  height="20" valign="middle"> 
                 <div id="noWrap" align="center">
                	 <s:property value="realname"/>

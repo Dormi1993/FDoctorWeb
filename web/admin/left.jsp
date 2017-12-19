@@ -22,22 +22,22 @@ if(session.getAttribute("admin")!=null){
     <td bgcolor="#F5EFE7">
             <table cellpadding=0 cellspacing=0 align=center width=200>    
             	<tr> 
-                <td height=20><a href=/FDoctorWeb/admin/listUsers?status.id=0 target=right>所有用户</a></td>
+                <td height=20><a href=/FDoctorWeb/admin/listUsers?status.id=0 target=right>所有家庭成员</a></td>
               </tr> 
               <tr> 
-                <td height=20><a href=/FDoctorWeb/admin/listUsers?status.id=2 target=right>已冻结用户</a></td>
+                <td height=20><a href=/FDoctorWeb/admin/listUsers?status.id=2 target=right>已冻结家庭成员</a></td>
               </tr>
               <tr> 
-                <td height=20><a href=/FDoctorWeb/admin/listUsers?status.id=1 target=right>已启用用户</a></td>
+                <td height=20><a href=/FDoctorWeb/admin/listUsers?status.id=1 target=right>已启用家庭成员</a></td>
               </tr>
               <tr> 
-                <td height=20><a href=/FDoctorWeb/admin/add.jsp target=right>开户</a></td>
+                <td height=20><a href=/FDoctorWeb/admin/add.jsp target=right>开 户</a></td>
               </tr>
               <tr>
                 <td height=20><a href=/FDoctorWeb/Highcharts-6.0.4/examples/line-basic/index.jsp target=right>查看家庭成员CRP浓度变化</a></td>
               </tr>
               <tr>
-                <td height=20><a href=/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.jsp target=right>CRP浓度走势图</a></td>
+                <td height=20><a href=/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.htm target=right>CRP浓度走势图</a></td>
               </tr>
               <tr> 
                 <td height=20><a href=/FDoctorWeb/admin/changepwd.jsp target=right>修改个人密码</a></td>

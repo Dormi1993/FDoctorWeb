@@ -77,11 +77,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<table width="400" border="0" class="table">
 			<tbody>
 				<tr>
-				<td width="100">&nbsp;存款时间：</td>
+				<td width="100">&nbsp;充值时间：</td>
 				<td><input type="text" name="log.datetime" id="datetime"></td>
 				</tr>
 				<tr>
-				<td>&nbsp;存款金额：</td>
+				<td>&nbsp;充值金额：</td>
 				<td>
 					<input type="text" name="log.trMoney" id="trMoney" value="${log.trMoney}">
 					<span id="errormoney" style="color:red;"></span>
@@ -89,7 +89,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</tr>
 				<tr>
 				<td>&nbsp;</td>
-				<td>&nbsp;<input type="Submit" value="存款" /> </td>
+				<td>&nbsp;<input type="Submit" value="充值" /> </td>
 				</tr>
 			</tbody>
 		</table>

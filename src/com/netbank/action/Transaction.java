@@ -150,6 +150,21 @@ public class Transaction extends ActionSupport implements RequestAware, SessionA
         return "message";
     }
 
+    /**
+     * 发送站内信
+     */
+    public String sendMessage(){
+        //调用自定义方法isEnable判断账户是否冻结
+        if (isEnable()){
+            //使用执行isEnable方法从Session中重新获取的账户对象，给交易信息对象log中关联的账户对象属性赋值
+            log.setAccount(account);
+            session.put("user", account);
+            //调用业务方法，更新转账方和入账方的账户表Account中的余额，并在交易信息表transaction_log中添加对象
+            return isSuccess(transactionBiz.sendMessage(log));
+        }
+        return "message";
+    }
+
     public String list(){
         //获取待显示页页码
         int curPage = pager.getCurPage();

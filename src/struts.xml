@@ -77,6 +77,11 @@
 		<result name="input">/withdrawal.jsp</result>
 		<result name="message">/message.jsp</result>
     	</action>
+		<!-- 为Transaction类中sendMessage方法配置映射 -->
+		<action name="sendMessage" class="transaction" method="sendMessage">
+			<result name="input">/sendMessage.jsp</result>
+			<result name="message">/message.jsp</result>
+		</action>
     </package>
     
       <!-- 定义一个名称为info的包，继承struts 2的默认包，指定命名空间为"/info" -->

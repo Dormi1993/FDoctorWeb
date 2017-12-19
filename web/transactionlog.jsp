@@ -38,13 +38,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<tbody align="center">
 		    <!--标题部分  -->
 			<tr>
-			<td colspan="6" style="font-size: 20;">交易记录</td></tr>
+			<td colspan="6" style="font-size: 20;">操作记录</td></tr>
 			<tr ><td width="50">&nbsp;序号</td>
 			<td width="80">&nbsp;对方账户</td>
 			<td width="80">&nbsp;交易金额</td>
-			<td width="80">&nbsp;交类类型</td>
-			<td width="80">&nbsp;留言</td>
-			<td>&nbsp;交易日期</td></tr>
+			<td width="80">&nbsp;操作类型</td>
+			<td width="80">&nbsp;站内信内容</td>
+			<td>&nbsp;操作日期</td></tr>
 			<!--循环显示记录部分  -->
 			<s:iterator value="#request.logs" status="status" >
 			<tr>

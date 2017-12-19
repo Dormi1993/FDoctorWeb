@@ -102,6 +102,37 @@ public class TransactionBizImpl implements TransactionBiz {
         return false;
     }
 
+    /**
+     * 发送站内信
+     * @param log
+     * @return
+     */
+//    @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.READ_COMMITTED)
+    @Override
+    public boolean sendMessage(TransactionLog log) {
+        //获取入账方账户对象
+        Account other = userDAO.getAccount(log.getOtherid());
+        //获取转账方账户对象
+//        Account self = log.getAccount();
+        if (other != null){
+//            //修改转账方账户余额
+//            self.setBalance(log.getAccount().getBalance() - log.getTrMoney());
+//            //修改入账方账户余额
+//            other.setBalance(other.getBalance() + log.getTrMoney());
+            //将转账方账户余额更新到数据表Account
+//            userDAO.updateAccount(self);
+//            //将入账方账户余额更新到数据表Account
+//            userDAO.updateAccount(other);
+            //根据交易类型获取交易类型对象
+            TransactionType type = transactionDAO.getTransactionType("站内信");
+            log.setTransactionType(type);
+            //向数据表transaction_log中添加交易记录
+            return transactionDAO.addLog(log);
+
+        }
+        return false;
+    }
+
     //获取交易记录
     @Override
     public List getLogs(Account account, int page) {

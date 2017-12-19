@@ -25,23 +25,29 @@ if(session.getAttribute("user")!=null){
         <TR height=20>
           <TD align=middle width=30><IMG height=9 
             src="images/menu_icon.gif" width=9></TD>
-          <TD><A class=menuChild href="/FDoctorWeb/deposit.jsp" target=main>用户余额充值</A></TD></TR>
+          <TD><A class=menuChild href="/FDoctorWeb/deposit.jsp" target=main>余额充值</A></TD></TR>
         <TR height=20>
           <TD align=middle width=30><IMG height=9 
             src="images/menu_icon.gif" width=9></TD>
-          <TD><A class=menuChild href="/FDoctorWeb/withdrawal.jsp" target=main>用户余额提现</A></TD></TR>
+          <TD><A class=menuChild href="/FDoctorWeb/withdrawal.jsp" target=main>余额提现</A></TD></TR>
           <TR height=20>
           <TD align=middle width=30><IMG height=9 
             src="images/menu_icon.gif" width=9></TD>
-          <TD><A class=menuChild href="/FDoctorWeb/transfer.jsp" target=main>留言或转账</A></TD></TR><TR height=20>
+          <TD><A class=menuChild href="/FDoctorWeb/transfer.jsp" target=main>转账</A></TD></TR><TR height=20>
           <TD align=middle width=30><IMG height=9 
             src="images/menu_icon.gif" width=9></TD>
-          <TD><A class=menuChild href="/FDoctorWeb/transaction/list?pager.curPage=1" target=main>查询留言或转账记录</A></TD></TR><TR height=20>
+        <TD><A class=menuChild href="/FDoctorWeb/sendMessage.jsp" target=main>站内信</A></TD></TR><TR height=20>
+        <TD align=middle width=30><IMG height=9
+                                       src="images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild href="/FDoctorWeb/transaction/list?pager.curPage=1" target=main>查询操作记录</A></TD></TR><TR height=20>
           <TD align=middle width=30><IMG height=9 
             src="images/menu_icon.gif" width=9></TD>
-          <TD><A class=menuChild href="/FDoctorWeb/information.jsp" target=main>查看用户个人信息</A></TD></TR><TR height=20>
+          <TD><A class=menuChild href="/FDoctorWeb/information.jsp" target=main>查看个人信息</A></TD></TR><TR height=20>
           <TD align=middle width=30><IMG height=9
             src="images/menu_icon.gif" width=9></TD>
+        <TD><A class=menuChild href="/FDoctorWeb/modify.jsp" target=main>修改个人信息</A></TD></TR><TR height=20>
+        <TD align=middle width=30><IMG height=9
+                                       src="images/menu_icon.gif" width=9></TD>
         <TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-basic/index.jsp" target=main>查看全家CRP浓度</A></TD></TR><TR height=20>
         <TD align=middle width=30><IMG height=9
                                        src="images/menu_icon.gif" width=9></TD>
@@ -51,9 +57,7 @@ if(session.getAttribute("user")!=null){
         <TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.htm" target=main>CRP浓度走势图</A></TD></TR><TR height=20>
         <TD align=middle width=30><IMG height=9
                                        src="images/menu_icon.gif" width=9></TD>
-          <TD><A class=menuChild href="/FDoctorWeb/modify.jsp" target=main>修改用户个人信息</A></TD></TR><TR height=20>
-          <TD align=middle width=30><IMG height=9 
-            src="images/menu_icon.gif" width=9></TD>
+
           <TD><A class=menuChild href="/FDoctorWeb/changepwd.jsp" target=main>修改密码</A></TD></TR><TR height=20>
           <TD align=middle width=30><IMG height=9 
             src="images/menu_icon.gif" width=9></TD>

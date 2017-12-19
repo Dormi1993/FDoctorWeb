@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>transfer</title>
+    <title>sendMessage</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -74,12 +74,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   	
  <body onload="disptime()">
-<form  method="post" name="myform" action="/FDoctorWeb/transaction/transfer" onsubmit="return transfer()">
+<form  method="post" name="myform" action="/FDoctorWeb/transaction/sendMessage" onsubmit="return transfer()">
 	<div align="center">
 	<table width="400" border="0" class="table">
 		<tbody>
 			<tr>
-			<td>&nbsp;转账时间：</td>
+			<td>&nbsp;站内信时间：</td>
 			<td><input type="text" name="log.datetime" id="datetime"></td>
 			</tr>
 			<tr>
@@ -88,23 +88,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="text" name="log.otherid" id="otherid" value="${log.otherid }">
 				<span id="errorotherid" style="color:red;"></span>
 			</td></tr>
+
 			<tr>
-			<td>&nbsp;转账金额：</td>
-			<td>
-				<input type="text" name="log.trMoney" id="trMoney" value="${log.trMoney}">
-				<span id="errormoney" style="color:red;"></span>
-			</td>						
+				<td>&nbsp;站内信内容：</td>
+				<td>
+					<input type="text" name="log.message" id="message" value="${log.message}">
+					<span id="errormessage" style="color:red;"></span>
+				</td>
 			</tr>
-			<%--<tr>--%>
-				<%--<td>&nbsp;留言：</td>--%>
-				<%--<td>--%>
-					<%--<input type="text" name="log.message" id="message" value="${log.message}">--%>
-					<%--<span id="errormessage" style="color:red;"></span>--%>
-				<%--</td>--%>
-			<%--</tr>--%>
 			<tr>
 			<td>&nbsp;</td>
-			<td>&nbsp;<input type="Submit" value="转账" /> </td>
+			<td>&nbsp;<input type="Submit" value="发送" /> </td>
 			</tr>
 		</tbody>
 	</table>

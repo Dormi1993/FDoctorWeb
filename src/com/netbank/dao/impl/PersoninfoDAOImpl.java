@@ -78,4 +78,15 @@ public class PersoninfoDAOImpl implements PersoninfoDAO {
         session.save(personinfo);
         return true;
     }
+
+    /**
+     *根据accountid获取personinfo
+     */
+    public Personinfo getPersoninfo(int accountid) {
+        Session session=sessionFactory.getCurrentSession();
+        //因为entity里面的Personinfo的accountid是account
+        String hql="from Personinfo as s where s.account="+accountid;
+        Query query = session.createQuery(hql);
+        return (Personinfo) query.uniqueResult();
+    }
 }

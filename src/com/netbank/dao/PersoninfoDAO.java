@@ -19,5 +19,7 @@ public interface PersoninfoDAO {
     public List searchPersoninfo(Personinfo personinfo);
     //添加个人信息
     public boolean add(Personinfo personinfo);
+    //根据accountid获取personinfo
+    public Personinfo getPersoninfo(int accountid);
 
 }

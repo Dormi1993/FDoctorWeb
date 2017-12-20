@@ -36,6 +36,12 @@ public class PersoninfoBizImpl implements PersoninfoBiz {
         return true;
     }
 
+    //根据accountid获得个人信息
+    @Override
+    public Personinfo getPersoninfo(int accountid) {
+        return personinfoDAO.getPersoninfo(accountid);
+    }
+
     /**
      * 根据账户状态获取个人信息，状态为0表示获取所有客户
      */

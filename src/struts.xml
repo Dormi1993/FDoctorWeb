@@ -101,6 +101,7 @@
 		<!-- 使用通配符实现动态方法调用 -->
 		<action name="fcj" class="com.netbank.action.ServletForGETMethod" >
 			<result name="success">/index.jsp</result>
+			<result name="message">/message.jsp</result>
 		</action>
 	</package>
 </struts>    

@@ -1,5 +1,6 @@
 package com.netbank.biz;
 
+import com.netbank.entity.Account;
 import com.netbank.entity.Personinfo;
 import com.netbank.entity.Status;
 
@@ -19,4 +20,6 @@ public interface PersoninfoBiz {
     public List searchPersoninfo(Personinfo personinfo);
     //添加个人信息
     public boolean add(Personinfo personinfo);
+    //根据accountid获得个人信息
+    public Personinfo getPersoninfo(int accountid);
 }

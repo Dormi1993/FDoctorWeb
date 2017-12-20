@@ -105,4 +105,7 @@
     <!-- 使用原型模式定义AdminAction类，AdminAction类的属性userBiz和personinfoBiz通过Annotation注解方式注入 -->
     <bean name="admin" class="com.netbank.action.AdminAction" scope="prototype" />
 
+    <!--使用原型模式定义PersoninfoAction类，PersoninfoAction类的属性通过Annotation注解方式注入-->
+    <bean name="servletForGETMethod" class="com.netbank.action.ServletForGETMethod" scope="prototype"/>
+
 </beans>

@@ -43,6 +43,9 @@ Highcharts.chart('container', {
     subtitle: {
         text: 'FDoctorWeb'
     },
+    credits: {
+        enabled: false
+    },
 
     yAxis: {
         title: {

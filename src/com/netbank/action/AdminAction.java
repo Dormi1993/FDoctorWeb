@@ -44,6 +44,7 @@ public class AdminAction extends ActionSupport implements RequestAware, SessionA
     private Password pwd;
 
 
+
     /**
      * 对登录页面进行验证，检查用户名和密码是否正确
      */
@@ -139,7 +140,27 @@ public class AdminAction extends ActionSupport implements RequestAware, SessionA
         request.put("message33", "密码修改失败！");
         return "message";
     }
-//
+
+    /**
+     * 预测病情
+     */
+    public String predict(){
+
+        Personinfo per = personinfoBiz.getPersoninfo(id);
+        double crp = per.getCrp();
+
+        if (crp <= 2.8){
+            request.put("message33", "该家庭成员的身体状况良好！请您放心！");
+            return "message";
+        } else if (crp <= 7.14){
+            request.put("message33", "该家庭成员的CRP浓度轻微偏高，请与其保持联系！");
+            return "message";
+        } else {
+            request.put("message33", "该家庭成员的CRP浓度明显偏高，身体可能处于异常状态，请及时与其联系！");
+            return "message";
+        }
+    }
+
     /**
      * 删除账户
      */

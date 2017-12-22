@@ -31,6 +31,28 @@ public class PersoninfoAction extends ActionSupport implements RequestAware, Ses
     }
 
     /**
+     * 修改个人信息页面校验
+     *
+     */
+    public void validateModify(){
+        if ("".equals(personinfo.getTelephone().trim())){
+            personinfo.setTelephone("电话不详");
+        }
+        if (!(personinfo.getAge() > 18 && personinfo.getAge() < 100)){
+            addFieldError("personinfo.age", "年龄不符");
+        }
+        if(!Pattern.compile("^\\d{17}(\\d|x)$").
+                matcher(personinfo.getCardid().toString()).matches()){
+            addFieldError("personinfo.cardId", "身份证格式不正确");
+        }
+        if(!"电话不详".equals(personinfo.getTelephone().trim())
+                &&!Pattern.compile("^(?:1[358]\\d{9}|\\d{3,4}-\\d{8,9})$").matcher(personinfo.getTelephone()).matches()){
+            addFieldError("personinfo.telephone", "电话格式不正确");
+        }
+
+    }
+
+    /**
      * 修改个人信息
      * @return
      */
@@ -57,28 +79,27 @@ public class PersoninfoAction extends ActionSupport implements RequestAware, Ses
     }
 
     /**
-     * 修改个人信息页面校验
-     *
+     *预测病情
+     * @return
      */
-    public void validateModify(){
-        if ("".equals(personinfo.getTelephone().trim())){
-            personinfo.setTelephone("电话不详");
-        }
-        if (!(personinfo.getAge() > 18 && personinfo.getAge() < 100)){
-            addFieldError("personinfo.age", "年龄不符");
-        }
-        if(!Pattern.compile("^\\d{17}(\\d|x)$").
-                matcher(personinfo.getCardid().toString()).matches()){
-            addFieldError("personinfo.cardId", "身份证格式不正确");
-        }
-        if(!"电话不详".equals(personinfo.getTelephone().trim())
-                &&!Pattern.compile("^(?:1[358]\\d{9}|\\d{3,4}-\\d{8,9})$").matcher(personinfo.getTelephone()).matches()){
-            addFieldError("personinfo.telephone", "电话格式不正确");
+    public String predict(){
+        //从Session中获取保存的个人信息对象
+        Personinfo per = (Personinfo) session.get("personinfo");
+
+        double crp = per.getCrp();
+
+        if (crp <= 2.8){
+            request.put("message33", "您的身体状况良好！请继续保持！");
+            return "message";
+        } else if (crp <= 7.14){
+            request.put("message33", "您的CRP浓度轻微偏高，身体若有不适，请及时与医生联系！");
+            return "message";
+        } else {
+            request.put("message33", "您的CRP浓度明显偏高，身体可能处于异常状态，请及时与医生联系！");
+            return "message";
         }
 
     }
-
-
 
     @Override
     public void setRequest(Map<String, Object> map) {

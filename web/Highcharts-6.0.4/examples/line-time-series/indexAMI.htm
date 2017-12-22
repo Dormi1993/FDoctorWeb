@@ -23,7 +23,7 @@
 
 //            $.getJSON('https://data.jianshukeji.com/jsonp?filename=json/usdeur.json&callback=?', function (data) {
 //            $.getJSON('../../code/fcj/test01.js', function (data) {
-            $.getJSON('../../code/fcj/normal.json', function (data) {
+            $.getJSON('../../code/fcj/AMI.json', function (data) {
 //                console.log(JSON.stringify(data));//重要，可以查看时间戳转换！！
                 Highcharts.setOptions({
                     lang:{
@@ -57,11 +57,8 @@
                         text: document.ontouchstart === undefined ?
                             '鼠标拖动可以进行缩放' : '手势操作进行缩放'
                     },
-//                    credits: {
-//                        enabled: false
-//                    },
                     credits: {
-                        text: '1.94±0.84',
+                        text: '9.92±2.78',
                         href: 'http://www.hcharts.cn'
                     },
                     xAxis: {

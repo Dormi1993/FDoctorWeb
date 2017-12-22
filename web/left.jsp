@@ -54,7 +54,7 @@ if(session.getAttribute("user")!=null){
         <TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-labels/index.jsp" target=main>个人CRP浓度折线图</A></TD></TR><TR height=20>
         <TD align=middle width=30><IMG height=9
                                        src="images/menu_icon.gif" width=9></TD>
-        <TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.htm" target=main>CRP浓度走势图</A></TD></TR><TR height=20>
+        <TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.htm" target=main>个人CRP浓度走势图</A></TD></TR><TR height=20>
         <TD align=middle width=30><IMG height=9
                                        src="images/menu_icon.gif" width=9></TD>
 

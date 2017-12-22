@@ -37,7 +37,10 @@ if(session.getAttribute("admin")!=null){
                 <td height=20><a href=/FDoctorWeb/Highcharts-6.0.4/examples/line-basic/index.jsp target=right>查看家庭成员CRP浓度变化</a></td>
               </tr>
               <tr>
-                <td height=20><a href=/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.htm target=right>CRP浓度走势图</a></td>
+                <td height=20><a href=/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.htm target=right>正常组CRP浓度走势图</a></td>
+              </tr>
+              <tr>
+                <td height=20><a href=/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/indexAMI.htm target=right>急性心肌梗塞CRP浓度走势图</a></td>
               </tr>
               <tr> 
                 <td height=20><a href=/FDoctorWeb/admin/changepwd.jsp target=right>修改个人密码</a></td>

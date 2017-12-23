@@ -68,7 +68,7 @@ if(session.getAttribute("admin")==null)
           	</div>
           </td>	 
         </tr>
-    <!-- 循环显示用户信息部分 -->
+    <!-- 循环显示用户信息部分，//这里先从session里面的users里取出 -->
 	<s:iterator value="#request.users" status="status">
 	  <tr bgcolor="#FFFFFF"> 
               <td  height="20" valign="middle"> 

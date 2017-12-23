@@ -46,7 +46,7 @@ Highcharts.chart('container', {
         type: 'line'
     },
     title: {
-        text: 'CRP浓度'
+        text: '最近两周CRP浓度曲线图'
     },
     subtitle: {
         text: 'FDoctorWeb'
@@ -54,9 +54,9 @@ Highcharts.chart('container', {
     credits: {
         enabled: false
     },
-    xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    },
+//    xAxis: {
+//        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+//    },
     yAxis: {
         title: {
             text: 'CRP浓度（mg/L）'
@@ -68,17 +68,19 @@ Highcharts.chart('container', {
                  enabled: true
              },
 //             enableMouseTracking: false
-             pointStart: 200
+             pointStart: 1
          }
      },
 
     series: [{
-        name: '小明',
-        data: [6.6, 7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    }, {
-        name: '标准病例库',
-        data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-    }]
+        name: '${personinfo.realname}',//这里的personinfo是session里面的
+        data: [2.04, 1.83, 1.76, 1.86, 1.74, 2.15, 1.83, 1.99, 2.21, 2.10, 2.34, 2.18, 2.07, 2.09]
+    }
+        //, {
+           // name: '小hh${user.accountid}${user.username}',这里的user也是session里面的
+            //data: [1.99, 2.21, 2.10, 2.34, 2.18, 2.07, 2.09, 2.04, 1.83, 1.76, 1.86, 1.74, 2.15, 1.83]
+        //}
+    ]
 });
 		</script>
 	</body>

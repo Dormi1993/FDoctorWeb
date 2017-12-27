@@ -6,7 +6,7 @@
 <struts>   
     <package name="file" namespace="/file" extends="struts-default">    
 	    <interceptors>
-	    		<interceptor name="role" class="com.netbank.interceptor.RoleInterceptor"/>
+	    		<interceptor name="role" class="com.fdoctorweb.interceptor.RoleInterceptor"/>
 	    		<interceptor-stack name="roleStack">
 	    			<interceptor-ref name="defaultStack"/>
 	    			<interceptor-ref name="role"/>

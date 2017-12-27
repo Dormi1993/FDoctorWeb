@@ -1,5 +1,5 @@
 <%@page contentType="text/html;charset=utf-8" import="java.util.*"%>
-<%@page import="com.netbank.entity.Admin"%>
+<%@page import="com.fdoctorweb.entity.Admin"%>
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <%
 if(session.getAttribute("admin")==null)

@@ -1,5 +1,5 @@
 
-<%@page import="com.netbank.entity.Account"%>
+<%@page import="com.fdoctorweb.entity.Account"%>
 <%
 	Account account=(Account)session.getAttribute("user");
 	if(account==null){

@@ -101,6 +101,12 @@
 			  <result name="message">/message.jsp</result>
 			  <!--<interceptor-ref name="roleStack"/>-->
 		  </action>
+		  <action name="diagnose" class="personinfo" method="diagnose">
+			  <result name="login">/login.jsp</result>
+			  <result name="input">/predict.jsp</result>
+			  <result name="message">/message.jsp</result>
+			  <!--<interceptor-ref name="roleStack"/>-->
+		  </action>
     </package>
 
 	<package name="fcj" namespace="/dormi" extends="struts-default">

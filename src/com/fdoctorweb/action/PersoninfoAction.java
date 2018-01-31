@@ -79,10 +79,10 @@ public class PersoninfoAction extends ActionSupport implements RequestAware, Ses
     }
 
     /**
-     *预测病情
+     *诊断病情
      * @return
      */
-    public String predict(){
+    public String diagnose(){
         //从Session中获取保存的个人信息对象
         Personinfo per = (Personinfo) session.get("personinfo");
 
@@ -96,6 +96,29 @@ public class PersoninfoAction extends ActionSupport implements RequestAware, Ses
             return "message";
         } else {
             request.put("message33", "您的CRP浓度明显偏高，身体可能处于异常状态，请及时与医生联系！");
+            return "message";
+        }
+
+    }
+
+    /**
+     *预测病情
+     * @return
+     */
+    public String predict(){
+        //从Session中获取保存的个人信息对象
+        Personinfo per = (Personinfo) session.get("personinfo");
+
+        double crp = per.getCrp();
+
+        if (crp <= 2.8){
+            request.put("message33", "您未来几天的身体状况良好！请继续保持！");
+            return "message";
+        } else if (crp <= 7.14){
+            request.put("message33", "您未来几天的CRP浓度可能轻微偏高，身体若有不适，请及时与医生联系！");
+            return "message";
+        } else {
+            request.put("message33", "您未来几天的CRP浓度明显偏高，身体可能处于异常状态，请及时与医生联系！");
             return "message";
         }
 

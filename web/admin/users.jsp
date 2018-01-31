@@ -50,6 +50,8 @@ if(session.getAttribute("admin")==null)
           <td  nowrap  bgcolor="#999999">
             <div align="center"><font color="#FFFFFF">CRP浓度</font></div></td>
             <td  nowrap  bgcolor="#999999">
+                <div align="center"><font color="#FFFFFF">病情诊断</font></div></td>
+            <td  nowrap  bgcolor="#999999">
                 <div align="center"><font color="#FFFFFF">病情预测</font></div></td>
           <td  nowrap  bgcolor="#808080">
             <div align="center"><font color="#FFFFFF">电话</font></div></td>
@@ -105,6 +107,10 @@ if(session.getAttribute("admin")==null)
                 <div id="noWrap" align="center">
                     <s:property value="crp"/>
                 </div></td>
+          <td>
+              <div id="noWrap" align="center">
+                  <input type="button" value="诊断" onclick="javascript:location.href='/FDoctorWeb/admin/diagnose?id=${account.accountid}'">
+              </div></td>
           <td>
               <div id="noWrap" align="center">
                   <input type="button" value="预测" onclick="javascript:location.href='/FDoctorWeb/admin/predict?id=${account.accountid}'">

@@ -52,12 +52,15 @@ if(session.getAttribute("user")!=null){
         <TD align=middle width=30><IMG height=9
                                        src="images/menu_icon.gif" width=9></TD>
         <TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-labels/index.jsp" target=main>查看个人CRP浓度</A></TD></TR><TR height=20>
+        <%--<TD align=middle width=30><IMG height=9--%>
+                                       <%--src="images/menu_icon.gif" width=9></TD>--%>
+        <%--<TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.htm" target=main>个人CRP浓度走势图</A></TD></TR><TR height=20>--%>
+          <TD align=middle width=30><IMG height=9
+                                         src="images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild href="/FDoctorWeb/diagnose.jsp" target=main>病情诊断</A></TD></TR><TR height=20>
         <TD align=middle width=30><IMG height=9
                                        src="images/menu_icon.gif" width=9></TD>
-        <TD><A class=menuChild href="/FDoctorWeb/Highcharts-6.0.4/examples/line-time-series/index1.htm" target=main>个人CRP浓度走势图</A></TD></TR><TR height=20>
-        <TD align=middle width=30><IMG height=9
-                                       src="images/menu_icon.gif" width=9></TD>
-        <TD><A class=menuChild href="/FDoctorWeb/predict.jsp" target=main>预测病情</A></TD></TR><TR height=20>
+        <TD><A class=menuChild href="/FDoctorWeb/predict.jsp" target=main>病情预测</A></TD></TR><TR height=20>
         <TD align=middle width=30><IMG height=9
                                        src="images/menu_icon.gif" width=9></TD>
 
